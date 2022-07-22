@@ -3,13 +3,14 @@
 from calendar import c
 from logging import root
 from tkinter import *
+from tkinter import _Relief
 
 #----------
 #ventana principal
 #--------------
 
 #se declara una variable llamada ventana principal y que adquiere las caracteristicas de un objeto Tk()
-ventana_principal = Tk()
+ventana_principal=Tk()
 
 #titulo de la ventana 
 ventana_principal.title("Danny Ferney caucho menor ")
@@ -37,6 +38,9 @@ letrero2.pack()
 #Agregar un widget a la ventana principal
 letrero3 = Label(text="\n\n ¡Colegio san jose de guanenta¡ \n\n" , bg="red3") 
 letrero3.pack()
+
+miframe=Frame
+miframe.config(relief="groove")
 
 
 
